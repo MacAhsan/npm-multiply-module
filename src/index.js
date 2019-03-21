@@ -9,9 +9,10 @@ constructor(props){
     }
 }
 
-componentDidMount(props){
+componentDidMount(){
+    let {a, b} = this.props
     this.setState({
-        c: props.a * props.b
+        c: a * b
     })
 }
 

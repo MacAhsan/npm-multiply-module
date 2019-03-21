@@ -1,6 +1,6 @@
 {
   "name": "multiply-numbers",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Multiply numbers and return ",
   "main": "dist/index.js",
   "scripts": {

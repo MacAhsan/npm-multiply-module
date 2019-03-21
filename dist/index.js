@@ -43,6 +43,13 @@
     if (superClass) _setPrototypeOf(subClass, superClass);
   }
 
+  function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+  }
+
   function _setPrototypeOf(o, p) {
     _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
       o.__proto__ = p;
@@ -78,23 +85,27 @@
 
       _classCallCheck(this, Multiply);
 
-      state = {
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(Multiply).call(this, props));
+      _this.state = {
         c: ''
       };
-      return _possibleConstructorReturn(_this);
+      return _this;
     }
 
     _createClass(Multiply, [{
       key: "componentDidMount",
-      value: function componentDidMount(props) {
+      value: function componentDidMount() {
+        var _this$props = this.props,
+            a = _this$props.a,
+            b = _this$props.b;
         this.setState({
-          c: props.a * props.b
+          c: a * b
         });
       }
     }, {
       key: "render",
       value: function render() {
-        return React__default.createElement("div", null, this.state.c);
+        return React__default.createElement("div", null, React__default.createElement("h1", null, this.state.c));
       }
     }]);
 
