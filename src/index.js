@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 
 export default class Multiply extends Component {
 constructor(props){
-    state = {
+    this.state = {
         c: ''
     }
 }
@@ -16,7 +16,7 @@ componentDidMount(props){
 
 render() {
     return(
-        <div>{this.state.c}</div>
+        <div><h1>{this.state.c}</h1></div>
     )
 }
 

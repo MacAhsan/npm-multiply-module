@@ -1,5 +1,5 @@
 {
-  "name": "multiply",
+  "name": "multiply-numbers",
   "version": "1.0.0",
   "description": "Multiply numbers and return ",
   "main": "dist/index.js",
